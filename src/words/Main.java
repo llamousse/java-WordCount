@@ -27,6 +27,8 @@ public class Main
             }
         }
 
+        System.out.println();
+
         ArrayList<HashMap.Entry<String, Integer>> sortedMap = new ArrayList<HashMap.Entry<String, Integer>>();
         sortedMap.addAll(wordHashMap.entrySet());
 
@@ -37,5 +39,10 @@ public class Main
                 return o2.getValue() - o1.getValue();
             }
         });
+
+        // Prints each word and how many times it is found in String unText
+        for (HashMap.Entry<String, Integer> word : sortedMap) {
+            System.out.println("key: " + word.getKey() + " value: " + word.getValue());
+        }
     }
 }
