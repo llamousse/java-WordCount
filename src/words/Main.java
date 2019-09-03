@@ -37,6 +37,5 @@ public class Main
                 return o2.getValue() - o1.getValue();
             }
         });
-        // System.out.println("Size of Hash Map: ", wordHashMap.size());
     }
 }
